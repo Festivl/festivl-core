@@ -7,12 +7,21 @@
 
 import Foundation
 
-struct FestivalIteration: Codable {
-    let id: UUID?
-    let festivalID: UUID
-    let urlName: String
-    let startDate: Date
-    let endDate: Date
-    let stages: [Stage]
+public struct FestivalIteration: Codable {
+    public let id: UUID?
+    public let festivalID: UUID
+    public let urlName: String
+    public let startDate: Date
+    public let endDate: Date
+    public let stages: [Stage]
+
+    public init(id: UUID?, festivalID: UUID, urlName: String, startDate: Date, endDate: Date, stages: [Stage]) {
+        self.id = id
+        self.festivalID = festivalID
+        self.urlName = urlName
+        self.startDate = startDate
+        self.endDate = endDate
+        self.stages = stages
+    }
 }
 
