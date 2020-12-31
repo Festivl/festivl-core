@@ -7,11 +7,18 @@
 
 import Foundation
 
-public struct User {
+public struct User: Codable {
     var id: UUID?
     var email: String
     var name: String
-    var assoicatedFestivals: [UUID]
+    var associatedFestivalIDs: [UUID]
+
+    init(id: UUID?, email: String, name: String, associatedFestivalIDs: [UUID]) {
+        self.id = id
+        self.email = email
+        self.name = name
+        self.associatedFestivalIDs = associatedFestivalIDs
+    }
 }
 
 extension User: Codable {}
