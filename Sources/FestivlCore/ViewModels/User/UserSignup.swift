@@ -11,4 +11,10 @@ public struct UserSignup: Codable {
     public let email: String
     public let name: String
     public let password: String
+
+    public init(email: String, name: String, password: String) {
+        self.email = email
+        self.name = name
+        self.password = password
+    }
 }
