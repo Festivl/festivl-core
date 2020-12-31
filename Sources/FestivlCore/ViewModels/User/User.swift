@@ -11,12 +11,12 @@ public struct User: Codable {
     var id: UUID?
     var email: String
     var name: String
-    var associatedFestivalIDs: [UUID]
+    var associatedFestivals: [Festival]
 
-    public init(id: UUID?, email: String, name: String, associatedFestivalIDs: [UUID]) {
+    public init(id: UUID?, email: String, name: String, associatedFestivals: [Festival]) {
         self.id = id
         self.email = email
         self.name = name
-        self.associatedFestivalIDs = associatedFestivalIDs
+        self.associatedFestivals = associatedFestivals
     }
 }
