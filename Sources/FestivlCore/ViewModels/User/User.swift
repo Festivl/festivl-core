@@ -20,5 +20,3 @@ public struct User: Codable {
         self.associatedFestivalIDs = associatedFestivalIDs
     }
 }
-
-extension User: Codable {}
