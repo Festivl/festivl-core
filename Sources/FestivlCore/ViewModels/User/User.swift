@@ -8,10 +8,10 @@
 import Foundation
 
 public struct User: Codable {
-    var id: UUID?
-    var email: String
-    var name: String
-    var associatedFestivals: [Festival]
+    public var id: UUID?
+    public var email: String
+    public var name: String
+    public var associatedFestivals: [Festival]
 
     public init(id: UUID?, email: String, name: String, associatedFestivals: [Festival]) {
         self.id = id
