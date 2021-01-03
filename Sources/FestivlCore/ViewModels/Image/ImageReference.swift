@@ -8,13 +8,9 @@
 import Foundation
 
 public struct ImageReference: Codable {
-    public var imageID: String
-    public var imageType: String
-    public var prefixURL: String
+    public var imageURL: String
 
-    public init(imageID: String, imageType: String, prefixURL: String) {
-        self.imageID = imageID
-        self.imageType = imageType
-        self.prefixURL = prefixURL
+    public init(imageURL: String) {
+        self.imageURL = imageURL
     }
 }
