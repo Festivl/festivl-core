@@ -13,10 +13,10 @@ public struct ImageUpload: Codable {
     }
 
 
-    public var imageData: Data
+    public var imageData: String
     public var folder: Folder
 
-    public init(_ imageData: Data, folder: Folder) {
+    public init(_ imageData: String, folder: Folder) {
         self.imageData = imageData
         self.folder = folder
     }
