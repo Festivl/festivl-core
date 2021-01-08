@@ -7,18 +7,18 @@
 
 import Foundation
 
-public struct FestivalIteration: Codable {
+public struct Event: Codable {
     public let id: UUID?
     public let festivalID: UUID
-    public let urlName: String
+    public let name: String
     public let startDate: Date
     public let endDate: Date
     public let stages: [Stage]
 
-    public init(id: UUID?, festivalID: UUID, urlName: String, startDate: Date, endDate: Date, stages: [Stage]) {
+    public init(id: UUID?, festivalID: UUID, name: String, startDate: Date, endDate: Date, stages: [Stage]) {
         self.id = id
         self.festivalID = festivalID
-        self.urlName = urlName
+        self.name = name
         self.startDate = startDate
         self.endDate = endDate
         self.stages = stages
